@@ -1,0 +1,26 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    missing_required_param: error
+    missing_return: error
+
+linter:
+  rules:
+    public_member_api_docs: false
+    sort_pub_dependencies: false
+    always_use_package_imports: false
+    prefer_int_literals: false
+    lines_longer_than_80_chars: false
+    directives_ordering: false
+    matching_super_parameters: false
+    discarded_futures: false
+    unnecessary_unawaited: false
+    avoid_types_on_closure_parameters: false
+    specify_nonobvious_property_types: false
+    unnecessary_ignore: false
+    document_ignores: false
+    empty_catches: false
